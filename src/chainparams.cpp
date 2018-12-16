@@ -179,37 +179,12 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1544967802;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 0;
+        genesis.nNonce = 915194;
 
         hashGenesisBlock = genesis.GetHash();
 
-        // Genesis creation code.
-        if(genesis.GetHash() != uint256("0x"))
-        {
-            printf("MSearching for genesis block...\n");
-            uint256 hashTarget;
-            hashTarget.SetCompact(genesis.nBits);
-            while(uint256(genesis.GetHash()) > uint256(hashTarget))
-            {
-                ++genesis.nNonce;
-                if (genesis.nNonce == 0)
-                {
-                    printf("Mainnet NONCE WRAPPED, incrementing time");
-                    std::cout << std::string("Mainnet NONCE WRAPPED, incrementing time:\n");
-                    ++genesis.nTime;
-                }
-                if (genesis.nNonce % 10000 == 0)
-                {
-                   printf("Mainnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
-                }
-            }
-            printf("Mainnet block.nTime = %u \n", genesis.nTime);
-            printf("Mainnet block.nNonce = %u \n", genesis.nNonce);
-            printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-            printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-        }
-        assert(hashGenesisBlock == uint256("0x0000041e482b9b9691d98eefb48473405c0b8ec31b76df3797c74a78680ef818"));
-        assert(genesis.hashMerkleRoot == uint256("0x1b2ef6e2f28be914103a277377ae7729dcd125dfeb8bf97bd5964ba72b6dc39b"));
+        assert(hashGenesisBlock == uint256("0x00000067fc6198362d73577706dd82ac6d498e2f9568f30b4a28ee90389c5883"));
+        assert(genesis.hashMerkleRoot == uint256("0xca587947b50d60e42f42422a7f14ed911fed7de25b62180ed50e950ec1638652"));
 
         vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "pivx.seed.fuzzbawls.pw"));     // Primary DNS Seeder from Fuzzbawls
         vSeeds.push_back(CDNSSeedData("fuzzbawls.pw", "pivx.seed2.fuzzbawls.pw"));    // Secondary DNS Seeder from Fuzzbawls
