@@ -285,7 +285,6 @@ public:
         genesis.nTime = 1454124731;
         genesis.nNonce = 2402015;
 
-        printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0x84872d6502cb8ce31bc5d98074e79ad990433f91b5a32b213cf6d18711d00af3"));
 
@@ -359,8 +358,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51476;
-        printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x4f023a2120d9127b21bbad01724fdb79b519f593f2a85b60d3d79160ec5f29df"));
+        assert(hashGenesisBlock == uint256("0x1bc448d350f5c57fb3b13d6723d4db88ad9e69769f63bf8d58f6652df93939bc"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
