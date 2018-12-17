@@ -7,7 +7,7 @@
 #define BITCOIN_BIGNUM_H
 
 #if defined HAVE_CONFIG_H
-#include "pivx-config.h"
+#include "adcoin-config.h"
 #endif
 
 #include <stdexcept>

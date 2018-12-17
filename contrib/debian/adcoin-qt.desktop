@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=ADCOIN
+Comment=ADCOIN P2P Cryptocurrency
+Comment[fr]=ADCOIN, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=ADCOIN, eşten eşe kriptografik sanal para birimi
+Exec=adcoin-qt %u
+Terminal=false
+Type=Application
+Icon=adcoin128
+MimeType=x-scheme-handler/adcoin;
+Categories=Office;Finance;

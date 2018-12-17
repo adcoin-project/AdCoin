@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: pivxd.service
-Upstart: pivxd.conf
-OpenRC:  pivxd.openrc
-         pivxd.openrcconf
-CentOS:  pivxd.init
+SystemD: adcoind.service
+Upstart: adcoind.conf
+OpenRC:  adcoind.openrc
+         adcoind.openrcconf
+CentOS:  adcoind.init
 
 have been made available to assist packagers in creating node packages here.
 

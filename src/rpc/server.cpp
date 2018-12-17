@@ -2,6 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2018 The PIVX developers
+// Copyright (c) 2018 The AdCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -266,11 +267,11 @@ UniValue stop(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop PIVX server.");
+            "\nStop ADCOIN server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "PIVX server stopping";
+    return "ADCOIN server stopping";
 }
 
 
@@ -354,37 +355,37 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* PIVX features */
-        {"pivx", "masternode", &masternode, true, true, false},
-        {"pivx", "listmasternodes", &listmasternodes, true, true, false},
-        {"pivx", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"pivx", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"pivx", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
-        {"pivx", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
-        {"pivx", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
-        {"pivx", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"pivx", "masternodedebug", &masternodedebug, true, true, false},
-        {"pivx", "startmasternode", &startmasternode, true, true, false},
-        {"pivx", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"pivx", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"pivx", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"pivx", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"pivx", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"pivx", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"pivx", "mnbudget", &mnbudget, true, true, false},
-        {"pivx", "preparebudget", &preparebudget, true, true, false},
-        {"pivx", "submitbudget", &submitbudget, true, true, false},
-        {"pivx", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"pivx", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"pivx", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"pivx", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"pivx", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"pivx", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"pivx", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"pivx", "checkbudgets", &checkbudgets, true, true, false},
-        {"pivx", "mnsync", &mnsync, true, true, false},
-        {"pivx", "spork", &spork, true, true, false},
-        {"pivx", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* ADCOIN features */
+        {"adcoin", "masternode", &masternode, true, true, false},
+        {"adcoin", "listmasternodes", &listmasternodes, true, true, false},
+        {"adcoin", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"adcoin", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"adcoin", "createmasternodebroadcast", &createmasternodebroadcast, true, true, false},
+        {"adcoin", "decodemasternodebroadcast", &decodemasternodebroadcast, true, true, false},
+        {"adcoin", "relaymasternodebroadcast", &relaymasternodebroadcast, true, true, false},
+        {"adcoin", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"adcoin", "masternodedebug", &masternodedebug, true, true, false},
+        {"adcoin", "startmasternode", &startmasternode, true, true, false},
+        {"adcoin", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"adcoin", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"adcoin", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"adcoin", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"adcoin", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"adcoin", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"adcoin", "mnbudget", &mnbudget, true, true, false},
+        {"adcoin", "preparebudget", &preparebudget, true, true, false},
+        {"adcoin", "submitbudget", &submitbudget, true, true, false},
+        {"adcoin", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"adcoin", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"adcoin", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"adcoin", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"adcoin", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"adcoin", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"adcoin", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"adcoin", "checkbudgets", &checkbudgets, true, true, false},
+        {"adcoin", "mnsync", &mnsync, true, true, false},
+        {"adcoin", "spork", &spork, true, true, false},
+        {"adcoin", "getpoolinfo", &getpoolinfo, true, true, false},
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -450,11 +451,11 @@ static const CRPCCommand vRPCCommands[] =
         {"zerocoin", "exportzerocoins", &exportzerocoins, false, false, true},
         {"zerocoin", "reconsiderzerocoins", &reconsiderzerocoins, false, false, true},
         {"zerocoin", "getspentzerocoinamount", &getspentzerocoinamount, false, false, false},
-        {"zerocoin", "getzpivseed", &getzpivseed, false, false, true},
-        {"zerocoin", "setzpivseed", &setzpivseed, false, false, true},
+        {"zerocoin", "getzadcoinseed", &getzadcoinseed, false, false, true},
+        {"zerocoin", "setzadcoinseed", &setzadcoinseed, false, false, true},
         {"zerocoin", "generatemintlist", &generatemintlist, false, false, true},
-        {"zerocoin", "searchdzpiv", &searchdzpiv, false, false, true},
-        {"zerocoin", "dzpivstate", &dzpivstate, false, false, true}
+        {"zerocoin", "searchdzadcoin", &searchdzadcoin, false, false, true},
+        {"zerocoin", "dzadcoinstate", &dzadcoinstate, false, false, true}
 
 #endif // ENABLE_WALLET
 };
@@ -618,14 +619,14 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> pivx-cli " + methodname + " " + args + "\n";
+    return "> adcoin-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
 {
     return "> curl --user myusername --data-binary '{\"jsonrpc\": \"1.0\", \"id\":\"curltest\", "
            "\"method\": \"" +
-           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:51473/\n";
+           methodname + "\", \"params\": [" + args + "] }' -H 'content-type: text/plain;' http://127.0.0.1:21473/\n";
 }
 
 void RPCSetTimerInterfaceIfUnset(RPCTimerInterface *iface)
