@@ -4,7 +4,7 @@
 There are many ways to setup a wallet to support start-many. This guide will walk through two of them.
 
 1. [Importing an existing wallet (recommended if you are consolidating wallets).](#option1)
-2. [Sending 10,000 ADCOIN to new wallet addresses.](#option2)
+2. [Sending 100,000 ADCOIN to new wallet addresses.](#option2)
 
 ## <a name="option1"></a>Option 1. Importing an existing wallet
 
@@ -48,7 +48,7 @@ The wallet will re-scan and you will see your available balance increase by the 
 2. Click the Receive tab.
 3. Fill in the form to request a payment.
     * Label: mn01
-    * Amount: 1000 (optional)
+    * Amount: 100000 (optional)
     * Click *Request payment*
 5. Click the *Copy Address* button
 
@@ -56,9 +56,9 @@ Create a new wallet address for each MasterNode.
 
 Close your QT Wallet.
 
-### Send 10,000 ADCOIN to New Addresses
+### Send 100,000 ADCOIN to New Addresses
 
-Just like setting up a standard MN. Send exactly 10,000 ADCOIN to each new address created above.
+Just like setting up a standard MN. Send exactly 100,000 ADCOIN to each new address created above.
 
 ### Create New Masternode Private Keys
 
@@ -78,7 +78,7 @@ Remember... this is local. Make sure your QT is not running.
 
 Create the masternode.conf file in the same directory as your wallet.dat.
 
-Copy the masternode private key and correspondig collateral output transaction that holds the 1K ADCOIN.
+Copy the masternode private key and correspondig collateral output transaction that holds the 100K ADCOIN.
 
 The masternode private key may be an existing key from [Option 1](#option1), or a newly generated key from [Option 2](#option2).
 
