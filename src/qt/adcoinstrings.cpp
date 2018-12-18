@@ -32,7 +32,7 @@ QT_TRANSLATE_NOOP("adcoin-core", ""
 QT_TRANSLATE_NOOP("adcoin-core", ""
 "Calculated accumulator checkpoint is not what is recorded by block index"),
 QT_TRANSLATE_NOOP("adcoin-core", ""
-"Cannot obtain a lock on data directory %s. BitCoin One Core is probably already "
+"Cannot obtain a lock on data directory %s. AdCoin Core is probably already "
 "running."),
 QT_TRANSLATE_NOOP("adcoin-core", ""
 "Change automatic finalized budget voting behavior. mode=auto: Vote for only "
@@ -192,7 +192,7 @@ QT_TRANSLATE_NOOP("adcoin-core", ""
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
 QT_TRANSLATE_NOOP("adcoin-core", ""
-"Unable to bind to %s on this computer. BitCoin One Core is probably already running."),
+"Unable to bind to %s on this computer. AdCoin Core is probably already running."),
 QT_TRANSLATE_NOOP("adcoin-core", ""
 "Unable to locate enough Obfuscation denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("adcoin-core", ""
@@ -212,7 +212,7 @@ QT_TRANSLATE_NOOP("adcoin-core", ""
 "pay if you send a transaction."),
 QT_TRANSLATE_NOOP("adcoin-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong BitCoin One Core will not work properly."),
+"your clock is wrong AdCoin Core will not work properly."),
 QT_TRANSLATE_NOOP("adcoin-core", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
@@ -268,7 +268,8 @@ QT_TRANSLATE_NOOP("adcoin-core", "Connect to a node to retrieve peer addresses, 
 QT_TRANSLATE_NOOP("adcoin-core", "Connection options:"),
 QT_TRANSLATE_NOOP("adcoin-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
 QT_TRANSLATE_NOOP("adcoin-core", "Copyright (C) 2014-%i The Dash Core Developers"),
-QT_TRANSLATE_NOOP("adcoin-core", "Copyright (C) 2015-%i The BitCoin One Core Developers"),
+QT_TRANSLATE_NOOP("adcoin-core", "Copyright (C) 2015-%i The PIVX Core Developers"),
+QT_TRANSLATE_NOOP("adcoin-core", "Copyright (C) 2018-%i The AdCoin Core Developers"),
 QT_TRANSLATE_NOOP("adcoin-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("adcoin-core", "Could not parse masternode.conf"),
 QT_TRANSLATE_NOOP("adcoin-core", "Debugging/Testing options:"),
@@ -297,7 +298,7 @@ QT_TRANSLATE_NOOP("adcoin-core", "Error initializing wallet database environment
 QT_TRANSLATE_NOOP("adcoin-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("adcoin-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("adcoin-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("adcoin-core", "Error loading wallet.dat: Wallet requires newer version of BitCoin One Core"),
+QT_TRANSLATE_NOOP("adcoin-core", "Error loading wallet.dat: Wallet requires newer version of AdCoin Core"),
 QT_TRANSLATE_NOOP("adcoin-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("adcoin-core", "Error reading from database, shutting down."),
 QT_TRANSLATE_NOOP("adcoin-core", "Error recovering public key."),
@@ -336,7 +337,7 @@ QT_TRANSLATE_NOOP("adcoin-core", "Incompatible mode."),
 QT_TRANSLATE_NOOP("adcoin-core", "Incompatible version."),
 QT_TRANSLATE_NOOP("adcoin-core", "Incorrect or no genesis block found. Wrong datadir for network?"),
 QT_TRANSLATE_NOOP("adcoin-core", "Information"),
-QT_TRANSLATE_NOOP("adcoin-core", "Initialization sanity check failed. BitCoin One Core is shutting down."),
+QT_TRANSLATE_NOOP("adcoin-core", "Initialization sanity check failed. AdCoin Core is shutting down."),
 QT_TRANSLATE_NOOP("adcoin-core", "Input is not valid."),
 QT_TRANSLATE_NOOP("adcoin-core", "Insufficient funds"),
 QT_TRANSLATE_NOOP("adcoin-core", "Insufficient funds."),
@@ -506,7 +507,7 @@ QT_TRANSLATE_NOOP("adcoin-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("adcoin-core", "Version 1 zADCOIN require a security level of 100 to successfully spend."),
 QT_TRANSLATE_NOOP("adcoin-core", "Wallet %s resides outside data directory %s"),
 QT_TRANSLATE_NOOP("adcoin-core", "Wallet is locked."),
-QT_TRANSLATE_NOOP("adcoin-core", "Wallet needed to be rewritten: restart BitCoin One Core to complete"),
+QT_TRANSLATE_NOOP("adcoin-core", "Wallet needed to be rewritten: restart AdCoin Core to complete"),
 QT_TRANSLATE_NOOP("adcoin-core", "Wallet options:"),
 QT_TRANSLATE_NOOP("adcoin-core", "Wallet window title"),
 QT_TRANSLATE_NOOP("adcoin-core", "Warning"),

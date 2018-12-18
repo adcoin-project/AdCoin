@@ -290,10 +290,10 @@
 #define PACKAGE_BUGREPORT "www.getadcoin.com"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "BitCoin ONE Core"
+#define PACKAGE_NAME "AdCoin Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "BitCoin ONE Core 3.1.99"
+#define PACKAGE_STRING "AdCoin Core 3.1.99"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "adcoin"

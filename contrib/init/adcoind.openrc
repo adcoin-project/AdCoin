@@ -16,7 +16,7 @@ BITCOIND_USER=${BITCOIND_USER:-adcoin}
 BITCOIND_GROUP=${BITCOIND_GROUP:-adcoin}
 BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/adcoind}
 
-name="BitCoin One Core Daemon"
+name="AdCoin Core Daemon"
 description="ADCOIN crypto-currency p2p network daemon"
 
 command="/usr/bin/adcoind"
