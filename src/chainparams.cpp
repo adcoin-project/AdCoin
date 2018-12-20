@@ -124,7 +124,7 @@ public:
         nTargetSpacing = 1 * 60;  // ADCOIN: 1 minute
         nMaturity = 20;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 31000000 * COIN;
+        nMaxMoneyOut = 310000000 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 100;
@@ -188,7 +188,7 @@ public:
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
-        fMineBlocksOnDemand = true; // Default false
+        fMineBlocksOnDemand = false; // Default false
         fSkipProofOfWorkCheck = false;
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
