@@ -6,6 +6,8 @@ AdCoin is an open source crypto-currency focused on fast private transactions wi
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
 - Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
 
+The AdCoin pre-mine will be used for a coin-swap on January 22, 2019. 
+
 More information at [getadcoin.com](http://www.getadcoin.com) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=2029739.0)
 
 ### Coin Specs
@@ -14,7 +16,7 @@ More information at [getadcoin.com](http://www.getadcoin.com) Visit our ANN thre
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
 <tr><td>Max Coin Supply</td><td>100,000,000 ADCOIN</td></tr>
-<tr><td>Premine</td><td>31,000,000 ADCOIN</td></tr>
+<tr><td>Premine</td><td>31,000,000 ADCOIN (used for the coin swap)</td></tr>
 </table>
 
 ### Pow Phase
