@@ -2031,21 +2031,12 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
             return 0;
     }
 
-    if (nHeight <= 43200) {
-        ret = blockValue / 5;
-    } else if (nHeight < 86400 && nHeight > 43200) {
-        ret = blockValue / (100 / 30);
-    } else if (nHeight < (Params().NetworkID() == CBaseChainParams::TESTNET ? 145000 : 151200) && nHeight >= 86400) {
-        ret = 50 * COIN;
-    } else if (nHeight <= Params().LAST_POW_BLOCK() && nHeight >= 151200) {
-        ret = blockValue / 2;
-    } else if (nHeight < Params().Zerocoin_Block_V2_Start()) {
-        return GetSeeSaw(blockValue, nMasternodeCount, nHeight);
-    } else {
-        //When zADCOIN is staked, masternode only gets 2 ADCOIN
-        ret = 3 * COIN;
-        if (isZADCOINStake)
-            ret = 2 * COIN;
+    if (nHeight <= 15000) {
+        ret = blockValue * .2;  // 1 AdCoin mn, 4 AdCoin stake
+    } else if (nHeight > 15000) {
+        ret = blockValue * .4;  // 2 AdCoin mn, 3 AdCoin stake
+//  } else {
+//      return GetSeeSaw(blockValue, nMasternodeCount, nHeight);
     }
 
     return ret;
