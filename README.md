@@ -1,56 +1,32 @@
-ADCOIN Core integration/staging repository
+AdCoin Core integration/staging repository
 =====================================
 
-[![Build Status](https://travis-ci.org/AdCoin-Project/AdCoin.svg?branch=master)](https://travis-ci.org/AdCoin-Project/AdCoin) [![GitHub version](https://badge.fury.io/gh/AdCoin-Project%2FAdCoin.svg)](https://badge.fury.io/gh/AdCoin-Project%2FAdCoin)
-
-ADCOIN is an open source crypto-currency focused on fast private transactions with low transaction fees & environmental footprint.  It utilizes a custom Proof of Stake protocol for securing its network and uses an innovative variable seesaw reward mechanism that dynamically balances 90% of its block reward size between masternodes and staking nodes and 10% dedicated for budget proposals. The goal of ADCOIN is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
-- Anonymized transactions using the [_Zerocoin Protocol_](http://www.adcoin.org/zadcoin).
+AdCoin is an open source crypto-currency focused on fast private transactions with low transaction fees & environmental footprint. The goal of AdCoin is to achieve a decentralized sustainable crypto currency with near instant full-time private transactions, fair governance and community intelligence.
+- Anonymized transactions using the ZeroCoin protocol.
 - Fast transactions featuring guaranteed zero confirmation transactions, we call it _SwiftX_.
 - Decentralized blockchain voting utilizing Masternode technology to form a DAO. The blockchain will distribute monthly treasury funds based on successful proposals submitted by the community and voted on by the DAO.
 
-More information at [adcoin.org](http://www.adcoin.org) Visit our ANN thread at [BitcoinTalk](http://www.bitcointalk.org/index.php?topic=1262920)
+More information at [getadcoin.com](http://www.getadcoin.com) Visit our ANN thread at [BitcoinTalk](https://bitcointalk.org/index.php?topic=2029739.0)
 
 ### Coin Specs
 <table>
 <tr><td>Algo</td><td>Quark</td></tr>
 <tr><td>Block Time</td><td>60 Seconds</td></tr>
 <tr><td>Difficulty Retargeting</td><td>Every Block</td></tr>
-<tr><td>Max Coin Supply (PoW Phase)</td><td>43,199,500 ADCOIN</td></tr>
-<tr><td>Max Coin Supply (PoS Phase)</td><td>Infinite</td></tr>
-<tr><td>Premine</td><td>60,000 ADCOIN*</td></tr>
+<tr><td>Max Coin Supply</td><td>100,000,000 ADCOIN</td></tr>
+<tr><td>Premine</td><td>31,000,000 ADCOIN</td></tr>
 </table>
 
-*60,000 ADCOIN Premine was burned in block [279917](http://www.presstab.pw/phpexplorer/ADCOIN/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0)
-
-### Reward Distribution
-
+### Pow Phase
 <table>
-<th colspan=4>Genesis Block</th>
-<tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1</td><td>60,000 ADCOIN</td><td>Initial Pre-mine, burnt in block <a href="http://www.presstab.pw/phpexplorer/ADCOIN/block.php?blockhash=206d9cfe859798a0b0898ab00d7300be94de0f5469bb446cecb41c3e173a57e0">279917</a></td></tr>
-</table>
+<th>Phase</th><th>Block Height</th><th>Miner</th>
+<tr><td>Phase 1</td><td>1</td><td>31,000,000 ADCOIN</td></tr>  
+<tr><td>Phase 2</td><td>2-100</td><td>5 ADCOIN</td></tr>
+</table>  
 
-### PoW Rewards Breakdown
-
+### PoS Phase
 <table>
-<th>Block Height</th><th>Masternodes</th><th>Miner</th><th>Budget</th>
-<tr><td>2-43200</td><td>20% (50 ADCOIN)</td><td>80% (200 ADCOIN)</td><td>N/A</td></tr>
-<tr><td>43201-151200</td><td>20% (50 ADCOIN)</td><td>70% (200 ADCOIN)</td><td>10% (25 ADCOIN)</td></tr>
-<tr><td>151201-259200</td><td>45% (22.5 ADCOIN)</td><td>45% (22.5 ADCOIN)</td><td>10% (5 ADCOIN)</td></tr>
-</table>
-
-### PoS Rewards Breakdown
-
-<table>
-<th>Phase</th><th>Block Height</th><th>Reward</th><th>Masternodes & Stakers</th><th>Budget</th>
-<tr><td>Phase 1</td><td>259201-302399</td><td>50 ADCOIN</td><td>90% (45 ADCOIN)</td><td>10% (5 ADCOIN)</td></tr>
-<tr><td>Phase 2</td><td>302400-345599</td><td>45 ADCOIN</td><td>90% (40.5 ADCOIN)</td><td>10% (4.5 ADCOIN)</td></tr>
-<tr><td>Phase 3</td><td>345600-388799</td><td>40 ADCOIN</td><td>90% (36 ADCOIN)</td><td>10% (4 ADCOIN)</td></tr>
-<tr><td>Phase 4</td><td>388800-431999</td><td>35 ADCOIN</td><td>90% (31.5 ADCOIN)</td><td>10% (3.5 ADCOIN)</td></tr>
-<tr><td>Phase 5</td><td>432000-475199</td><td>30 ADCOIN</td><td>90% (27 ADCOIN)</td><td>10% (3 ADCOIN)</td></tr>
-<tr><td>Phase 6</td><td>475200-518399</td><td>25 ADCOIN</td><td>90% (22.5 ADCOIN)</td><td>10% (2.5 ADCOIN)</td></tr>
-<tr><td>Phase 7</td><td>518400-561599</td><td>20 ADCOIN</td><td>90% (18 ADCOIN)</td><td>10% (2 ADCOIN)</td></tr>
-<tr><td>Phase 8</td><td>561600-604799</td><td>15 ADCOIN</td><td>90% (13.5 ADCOIN)</td><td>10% (1.5 ADCOIN)</td></tr>
-<tr><td>Phase 9</td><td>604800-647999</td><td>10 ADCOIN</td><td>90% (9 ADCOIN)</td><td>10% (1 ADCOIN)</td></tr>
-<tr><td>Phase X</td><td>648000-Infinite</td><td>5 ADCOIN</td><td>90% (4.5 ADCOIN)</td><td>10% (0.5 ADCOIN)</td></tr>
+<th>Phase</th><th>Block Height</th><th>Reward</th><th>Staking</th><th>Masternode</th>
+<tr><td>Phase 1</td><td>101-15000</td><td>5 ADCOIN</td><td>4 ADCOIN</td><td>1 ADCOIN</td></tr>
+<tr><td>Phase 2</td><td>15001-...</td><td>5 ADCOIN</td><td>3 ADCOIN</td><td>2 ADCOIN</td></tr>
 </table>
