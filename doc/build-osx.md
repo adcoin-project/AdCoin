@@ -99,7 +99,7 @@ adcoind/adcoin-cli binaries are not included in the adcoin-Qt.app bundle.
 If you are building `adcoind` or `adcoin-qt` for others, your build machine should be set up
 as follows for maximum compatibility.
 
-To create a build for other install the following dependency:
+To create a build for others install the following dependency:
 ```bash        
 brew install librsvg
 ```
