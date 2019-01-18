@@ -19,13 +19,21 @@ available on your OS X installation media, but if not, you can get the
 current version from https://developer.apple.com/xcode/. If you install
 Xcode 4.3 or later, you'll need to install its command line tools. This can
 be done in `Xcode > Preferences > Downloads > Components` and generally must
-be re-done or updated every time Xcode is updated.
+be re-done or updated every time Xcode is updated. Xcode version 10.0 already
+has command line tools pre-installed. To check if command line tools are working
+use the following line in your terminal:
+```bash
+xcode-select --install
+```
 
 There's also an assumption that you already have `git` installed. If
 not, it's the path of least resistance to install [Github for Mac](https://mac.github.com/)
 (OS X 10.7+) or
 [Git for OS X](https://code.google.com/p/git-osx-installer/). It is also
-available via Homebrew.
+available via Homebrew using 
+```bash
+brew install git
+```
 
 You will also need to install [Homebrew](http://brew.sh) in order to install library
 dependencies.
@@ -38,7 +46,7 @@ Instructions: Homebrew
 
 #### Install dependencies using Homebrew
 
-        brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5 zmq libevent
+        brew install autoconf automake berkeley-db4 libtool boost miniupnpc openssl pkg-config protobuf qt5 zmq gmp libevent
 
 ### Building `adcoind`
 
