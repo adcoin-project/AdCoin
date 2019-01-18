@@ -122,7 +122,7 @@ If you generated a new masternode private key, you will need to update the remot
 
 Shut down the daemon and then edit the file.
 
-```sudo nano .adcoin/adcoin.conf```
+```sudo nano .adcoinCore/adcoin.conf```
 
 ### Edit the masternodeprivkey
 If you generated a new masternode private key, you will need to update the masternodeprivkey value in your remote adcoin.conf file.
@@ -137,7 +137,7 @@ I usually confirm that remote is on the correct block by issuing:
 
 ```adcoind getinfo```
 
-And compare with the official explorer at http://adcoinexplorer.coin-server.com <or> dnet.presstab.pw
+And compare with the official explorer at http://136.144.174.65:3001/
 
 ### Local
 

@@ -3,12 +3,12 @@
 # backward compatibility for existing gentoo layout
 #
 if [ -d "/var/lib/adcoin/.adcoin" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/adcoin/.adcoin"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/adcoin/.adcoinCore"
 else
 	BITCOIND_DEFAULT_DATADIR="/var/lib/adcoind"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/adcoin/adcoin.conf}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/adcoinCore/adcoin.conf}
 BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/adcoind}
 BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/adcoind.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}

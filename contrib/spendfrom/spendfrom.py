@@ -35,10 +35,10 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the adcoin data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/ADCOIN/")
+        return os.path.expanduser("~/Library/Application Support/ADCOINCore/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "ADCOIN")
-    return os.path.expanduser("~/.adcoin")
+        return os.path.join(os.environ['APPDATA'], "ADCOINCore")
+    return os.path.expanduser("~/.adcoinCore")
 
 def read_bitcoin_config(dbdir):
     """Read the adcoin.conf file from dbdir, returns dictionary of settings"""
