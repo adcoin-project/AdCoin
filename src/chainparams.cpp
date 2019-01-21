@@ -151,7 +151,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "Ryan Zinke, Face of Trump Environmental Rollbacks, Is Leaving Interior Department";
+        const char* pszTimestamp = "The Week in Tech: How Google and Facebook Spawned Surveillance Capitalism";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -162,23 +162,21 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 4;
-        genesis.nTime = 1544967802;
+        genesis.nTime = 1548066951;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 915194;
+        genesis.nNonce = 786572;
 
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x123283c54c54fd8297e24da1f3bad009ff243f22a49cd0139ce20e6be2c42ac1"));
-        assert(genesis.hashMerkleRoot == uint256("0xca587947b50d60e42f42422a7f14ed911fed7de25b62180ed50e950ec1638652"));
+        assert(hashGenesisBlock == uint256("0x000000fc5276647fd959f718c9526f87f4858c4ef62f2e29d3772e4e37040a25"));
+        assert(genesis.hashMerkleRoot == uint256("0x57a07da6767094be801a1e66d50487861918ba42c3268d00ecb6e65e4f2d37e8"));
 
-        vSeeds.push_back(CDNSSeedData("AdCoin main node", "37.97.202.190"));    // Main node
-        vSeeds.push_back(CDNSSeedData("AdCoin Node 1", "136.144.222.194"));     // Single node address
-        vSeeds.push_back(CDNSSeedData("AdCoin Node 2", "136.144.222.192"));     // Single node address
-        vSeeds.push_back(CDNSSeedData("AdCoin Node 3", "37.97.205.21"));        // Single node address
-        vSeeds.push_back(CDNSSeedData("AdCoin Node 4", "37.97.133.147"));       // Single node address
-        vSeeds.push_back(CDNSSeedData("AdCoin Node 5", "173.212.204.57"));      // Single node address
+        vSeeds.push_back(CDNSSeedData("AdCoin node 1", "37.97.205.21"));
+        vSeeds.push_back(CDNSSeedData("AdCoin node 2", "37.97.133.147"));
+        vSeeds.push_back(CDNSSeedData("AdCoin node 3", "37.97.202.190"));
+        vSeeds.push_back(CDNSSeedData("AdCoin node 4", "173.212.204.57"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 23);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x02)(0x2D)(0x25)(0x33).convert_to_container<std::vector<unsigned char> >();
@@ -273,7 +271,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0xe8feee38320cf685b66c115233a96dd42f49513a510bfbec15013eca789d0ab2"));
+        assert(hashGenesisBlock == uint256("0x362ff4c1a1b049cabca70eab574df1ec3205a8179cf0a1c5d9a2347d92fa870a"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -341,8 +339,8 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 41476;
-
-        assert(hashGenesisBlock == uint256("0xd92b0223a9377e3340d6d78af1316a47b2a84525a2b3a0822cea0bf98ffd2231"));
+        
+        assert(hashGenesisBlock == uint256("0xae67d5b30904c8737aa27f5bbb3afd00d5e505e791c6030e9bc3c905a6beac1a"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.

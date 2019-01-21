@@ -2031,13 +2031,11 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
             return 0;
     }
 
-    if (nHeight <= 15000) {
-        ret = blockValue * .2;  // 1 AdCoin mn, 4 AdCoin stake
-    } else if (nHeight > 15000) {
+//  if (nHeight > 15000) {
         ret = blockValue * .4;  // 2 AdCoin mn, 3 AdCoin stake
 //  } else {
 //      return GetSeeSaw(blockValue, nMasternodeCount, nHeight);
-    }
+//  }
 
     return ret;
 }
