@@ -143,7 +143,7 @@
 /* #undef HAVE_LIBCRYPT32 */
 
 /* Define to 1 if you have the `crypto' library (-lcrypto). */
-#define HAVE_LIBCRYPTO 1
+/* #undef HAVE_LIBCRYPTO */
 
 /* Define to 1 if you have the `gdi32' library (-lgdi32). */
 /* #undef HAVE_LIBGDI32 */
